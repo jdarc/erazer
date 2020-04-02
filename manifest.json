@@ -1,0 +1,27 @@
+{
+  "name": "Erazer",
+  "version": "0.1",
+  "description": "Automatically clear downloads hisitory",
+  "permissions": ["storage", "downloads", "declarativeContent"],
+  "author": "Jean d'Arc",
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "page_action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "images/bin16.png",
+      "32": "images/bin32.png",
+      "48": "images/bin48.png",
+      "128": "images/bin128.png"
+    }
+  },
+  "icons": {
+    "16": "images/bin16.png",
+    "32": "images/bin32.png",
+    "48": "images/bin48.png",
+    "128": "images/bin128.png"
+  },
+  "manifest_version": 2
+}
