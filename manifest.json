@@ -1,7 +1,7 @@
 {
   "name": "Erazer",
   "version": "0.1",
-  "description": "Automatically clear downloads hisitory",
+  "description": "Automatically clear downloads history",
   "permissions": ["storage", "downloads", "declarativeContent"],
   "author": "Jean d'Arc",
   "background": {
