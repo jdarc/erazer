@@ -2,22 +2,21 @@
 <html>
   <head>
     <style>
+      * {
+        box-sizing: border-box;
+      }
+
       body {
         background-color: teal;
       }
 
       .checkbox-switch {
         cursor: pointer;
-        display: inline-block;
         overflow: hidden;
-        position: relative;
-        text-align: left;
-        width: 80px;
-        height: 30px;
-        -webkit-border-radius: 30px;
         border-radius: 30px;
         line-height: 1.2;
         font-size: 14px;
+        position: relative;
       }
 
       .checkbox-switch input.input-checkbox {
@@ -39,7 +38,6 @@
         height: 30px;
         background-color: #95a5a6;
         pointer-events: none;
-        -webkit-transition: background 0.25s ease-out 0s;
         transition: background 0.25s ease-out 0s;
       }
 
@@ -47,14 +45,12 @@
         content: "";
         display: block;
         position: absolute;
+        top: 5px;
+        left: 5px;
         width: 20px;
         height: 20px;
         border-radius: 10px;
-        -webkit-border-radius: 10px;
         background-color: #7f8c8d;
-        top: 5px;
-        left: 5px;
-        -webkit-transition: left 0.3s ease-out 0s;
         transition: left 0.3s ease-out 0s;
         z-index: 10;
       }
@@ -74,7 +70,6 @@
         color: #fff;
         font-weight: 700;
         padding-top: 6px;
-        -webkit-transition: all 0.3s ease-out 0s;
         transition: all 0.3s ease-out 0s;
       }
 
@@ -103,7 +98,7 @@
   </head>
   <body>
     <div class="checkbox-switch">
-      <input type="checkbox" checked name="status" class="input-checkbox" id="toggler" />
+      <input type="checkbox" name="status" class="input-checkbox" id="toggler" />
       <div class="checkbox-animate">
         <span class="checkbox-off">OFF</span>
         <span class="checkbox-on">ON</span>
